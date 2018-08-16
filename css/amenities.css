@@ -1,0 +1,98 @@
+
+
+/*   Global styles
+---------------------------------------------------*/
+
+body {
+    font-family: 'EB Garamond', serif;
+
+}
+
+
+/* Navigation top banner styles
+---------------------------------------------------*/
+a , button {
+    text-decoration: none; /*remove underline of the link*/
+    color:#CD853F;
+    font-size:20px;
+    font-weight: bold;
+    text-transform: initial;
+    padding:10px;
+    display: inline-block;
+}
+
+#logo{
+    font-size: 50px;
+    font-weight: normal;
+    margin-right: 50px;
+}
+
+button {
+    float:right;
+    background-color: #CD853F;
+    color:white;
+    margin-right: 20px;
+    font-family: 'EB Garamond', serif;
+}
+
+nav a.active{
+    background-color: #CD853F;
+    color:white;
+}
+
+h1{
+    color:#CD853F;
+    font-weight: bold;
+    text-align:center;
+}
+
+/* Main page body styles
+----------------------------------------------------*/
+img {
+    width:55%;
+    height:400px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.explanation {
+    width:45%;
+    height:400px;
+}
+
+#pool>img, #social > img,#spa > .explanation,#dinning>.explanation {
+     float:left;
+ }
+
+#dinning>img, #spa > img,#pool>.explanation,#social>.explanation {
+    float:right;
+}
+
+.explanation {
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+    color:dimgrey;
+}
+h2 {
+    color:#CD853F;
+    text-decoration: #bbbbbb underline;
+
+}
+
+
+
+
+/* Footer styles
+----------------------------------------------------*/
+footer {
+    text-align: center;
+    color:#CD853F;
+    font-size:30px;
+    font-weight: bold;
+}
+#copyright
+{
+    font-size:12px;
+}

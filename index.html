@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relax Hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="60-334 Final Project" />
+    <meta name="keywords" content="hotel management system project" />
+    <meta name="author" content="Tong Li" />
+
+
+    <script> js/main.js</script>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav >
+                   <a id="logo" href="index.html">Relax Hotel</a>
+                   <a href="html/rooms.html">Rooms</a>
+                   <a href="html/amenities.html">Amenities</a>
+                   <a href="html/contact.html">Contact</a>
+                   <a href="html/reservation.html">Reservation</a>
+            <button type="button" onclick="window.location='html/staffsignin.php';" >Staff Login</button>
+
+        </nav>
+
+    </header>
+
+    <div id="main_body">
+
+                   <form method="post" id="search-form" action="html/search.php">
+                        <label for="checkin_date">Check-in:</label>
+                            <input type="date" name="cid" id="checkin_date" placeholder="">
+
+                        <label for="checkout_date">Check-out:</label>
+                            <input type="date" name="cod" id="checkout_date" placeholder="" >
+
+                        <label for="adults">Adults</label>
+                                        <select name="people" id="adults" >
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5+</option>
+                                        </select>
+
+
+                        <input type="submit" name="submit" id="submit" value="Search">
+
+                    </form>
+
+
+
+
+
+
+
+    </div>
+
+
+    <footer>
+        <p>Let's Keep in Touch!</p>
+        <p id="copyright">Copyright 2018 by Tong Li</p>
+    </footer>
+
+
+
+</body>
+</html>

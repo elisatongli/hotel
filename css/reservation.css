@@ -1,0 +1,88 @@
+
+
+/*   Global styles
+---------------------------------------------------*/
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    color:dimgrey;
+
+}
+
+
+/* Navigation top banner styles
+---------------------------------------------------*/
+nav {
+
+}
+
+a , button {
+    text-decoration: none; /*remove underline of the link*/
+    color:#CD853F;
+    font-size:20px;
+    font-weight: bold;
+    text-transform: initial;
+    padding:10px;
+    display: inline-block;
+}
+
+#logo{
+    font-size: 50px;
+    font-weight: normal;
+    margin-right: 50px;
+
+
+}
+
+button {
+    float:right;
+    background-color: #CD853F;
+    color:white;
+    margin-right: 20px;
+    font-family: 'EB Garamond', serif;
+}
+
+nav a.active{
+    background-color: #CD853F;
+    color:white;
+}
+
+h1{
+    color:#CD853F;
+    font-weight: bold;
+    text-align:center;
+}
+
+
+/* Main page body styles
+----------------------------------------------------*/
+
+ul {
+    list-style-type: none;
+    padding-left:0;
+    font-size: 16px;
+}
+
+.detail{
+    box-sizing: border-box;
+    padding:50px;
+    text-align: left;
+}
+
+.table{
+    color:#CD853F;
+}
+
+/* Footer styles
+----------------------------------------------------*/
+footer {
+    text-align: center;
+    color:#CD853F;
+    font-size:30px;
+    font-weight: bold;
+}
+#copyright
+{
+    font-size:12px;
+}

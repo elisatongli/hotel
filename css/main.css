@@ -1,0 +1,96 @@
+
+
+/*   Global styles
+---------------------------------------------------*/
+
+body {
+    font-family: 'EB Garamond', serif;
+
+}
+
+
+/* Navigation top banner styles
+---------------------------------------------------*/
+nav {
+
+}
+
+a , button {
+    text-decoration: none; /*remove underline of the link*/
+    color:#CD853F;
+    font-size:20px;
+    font-weight: bold;
+    text-transform: initial;
+    padding:10px;
+    display: inline-block;
+}
+
+#logo{
+    font-size: 50px;
+    font-weight: normal;
+    margin-right: 50px;
+
+
+}
+
+button {
+    float:right;
+    background-color: #CD853F;
+    color:white;
+    margin-right: 20px;
+    font-family: 'EB Garamond', serif;
+}
+
+nav a.active{
+    background-color: #CD853F;
+    color:white;
+}
+
+/* Main page body styles
+----------------------------------------------------*/
+
+
+#main_body {
+
+    text-align: center;
+    background-image: url('../photos/bridge.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:600px;
+    padding: 25px;
+
+}
+
+#search-form {
+
+    width:950px;
+    margin: 100px;
+    font-size:20px;
+    font-weight: bold;
+    padding:20px;
+
+
+}
+
+
+#submit {
+    margin-left: 20px;
+    font-size:20px;
+    border:none;
+    background-color: #F4A460;
+    color:white;
+    font-family: 'EB Garamond', serif;
+
+}
+/* Footer styles
+----------------------------------------------------*/
+footer {
+    text-align: center;
+    color:#CD853F;
+    font-size:30px;
+    font-weight: bold;
+}
+#copyright
+{
+    font-size:12px;
+}
