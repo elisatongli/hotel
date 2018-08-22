@@ -4,7 +4,7 @@ Live Project is hosted on below link
 http://li1b4.myweb.cs.uwindsor.ca/
 
 Test User: 
-customer: visitor/visitor
+customer: visitor/visitor;
 staff: admin/admin
 
 
