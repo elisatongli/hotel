@@ -1,20 +1,9 @@
 <?php
-session_start();
-
-include("header.php");
-
 
 require_once 'login.php';
 $conn = new mysqli($hn, $un, $pw, $db);
 
-
-include("makereservation.php");
-
-echo "<p>Below is your existing reservation record</p>";
-
-$uid=$_SESSION['uid'];
-
-$query = "SELECT * FROM reservation where cusid = '$uid'";
+$query = "SELECT * FROM reservation";
 
 $result = mysqli_query($conn,$query);
 
@@ -33,8 +22,11 @@ for ($j = 0 ; $j < $rows ; ++$j)
     Room Type      $row[3]
     Quantity       $row[4]
     Total          $row[5]
+    Comment        $row[6]
+    Email          $row[7]
+    Phone          $row[8]
   </pre>
-  <form action="yourreservation.php" method="post">
+  <form action="staffreservation.php" method="post">
   <input type="hidden" name="delete" value="yes">
   <input type="hidden" name="rsvid" value="$row[0]">
   <input type="submit" value="Cancel Reservation # $row[0]"></form></div>
@@ -49,12 +41,14 @@ if (isset($_POST['delete']) && isset($_POST['rsvid']))
 
     $result = $conn->query($query);
     $message = "You have just cancelled reservation ".$rid."!";
-   if($result){
-       echo "<script type='text/javascript'>alert('$message');</script>";
-       echo "<p>$message</p>";}
+    if($result){
+        echo "<script type='text/javascript'>alert('$message');</script>";
+        echo "<p>$message</p>";
+        echo "<script>window.location='staffmain.php';</script>";
+    }
 
-   else {echo "DELETE failed: $query<br>" .
-       $conn->error . "<br><br>";}
+    else {echo "DELETE failed: $query<br>" .
+        $conn->error . "<br><br>";}
 }
 
 
@@ -65,6 +59,6 @@ function get_post($conn, $var)
 {
     return $conn->real_escape_string($_POST[$var]);
 }
+
+
 ?>
-
-

@@ -16,10 +16,22 @@ if ($conn->connect_error) die($conn->connect_error);
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../css/staff.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
-<p>Staff Login</p>
+<header>
+
+    <nav >
+        <a id="logo" href="../index.html">Relax Hotel</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="amenities.html">Amenities</a>
+        <a href="contact.html">Contact</a>
+        <a href="staffmain.php">Staff</a>
+    </nav>
+
+</header>
 
 
 
@@ -31,13 +43,13 @@ if ($conn->connect_error) die($conn->connect_error);
             <tr>
                 <td width="170" height="40"  align="center"><b>Username</b></td>
                 <td width="213">
-                    <input type="text" name="username">
+                    <input type="text" name="username" required>
                     </td>
             </tr>
             <tr>
                 <td height="38" align="center"><b>Password</b></td>
                 <td>
-                    <input type="password" name="password">
+                    <input type="password" name="password" required>
                     </td>
             </tr>
             <br />
@@ -45,7 +57,9 @@ if ($conn->connect_error) die($conn->connect_error);
                 <td height="48" colspan="2" align="center">
                     <input type="submit"  value="Login" name="ok"> </td>
             </tr>
-
+            <tr>
+                <td colspan="2" align="center"> login hint: admin / admin </td>
+            </tr>
         </table>
         <p>&nbsp;</p>
     </form>

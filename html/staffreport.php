@@ -1,3 +1,5 @@
+
+
 <html>
 <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -23,8 +25,10 @@
                 ?>
             ]);
 
+
+
             var options = {
-                title: 'Reservation Stats'
+                title: 'Existing Reservation Categorized by Room Type'
             };
 
             var chart = new google.visualization.PieChart(document.getElementById('piechart'));

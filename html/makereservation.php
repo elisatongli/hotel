@@ -2,8 +2,7 @@
 session_start();
 //var_dump($_SESSION);
 $user = $_SESSION['username'];
-echo $user;
-
+echo "<p>Welcome! ".$user."<br /></p>";
 
 require_once 'login.php';
 $conn = new mysqli($hn, $un, $pw, $db);
@@ -52,9 +51,16 @@ $_SESSION['uid']=$uid;
 
 
 <br><br>
-<form action="book.php" method="POST" name="reservationform">
+<form action="book.php" method="POST" name="reservationform" id="reservationform">
     <br><br>
     <table  border=0 align=center>
+
+        <tr>
+            <th align=left>Fill in the new reservation information below</th>
+
+        </tr>
+        <tr></tr>
+        <tr></tr>
         <tr>
             <th align=left>Check-in Date   :</th>
             <td>

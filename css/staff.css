@@ -1,0 +1,49 @@
+.table {
+
+    font-family: 'EB Garamond', serif;
+    color:#CD853F;
+    font-size:20px;
+
+}
+
+form table input[name="ok"]{
+
+    font-size:20px;
+    border:none;
+    background-color: #F4A460;
+    color:white;
+    font-family: 'EB Garamond', serif;
+}
+
+
+#staffheader {
+    border: #CD853F 2px dashed;
+    color:#CD853F;
+    font-size:20px;
+    font-weight: bold;
+}
+
+#staffheader a, #newlink{
+    font-size:20px;
+    border:none;
+    background-color: #F4A460;
+    color:white;
+    font-family: 'EB Garamond', serif;
+    display: inline-block;
+
+}
+
+#newlink:hover{
+    cursor:pointer;
+    color:red;
+}
+
+
+#newreservation h2,#reservations h2,#reports h2{
+    color:#CD853F;
+    font-family: 'EB Garamond', serif;
+}
+
+#newreservation li{
+    font-family: 'EB Garamond', serif;
+}

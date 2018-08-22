@@ -5,8 +5,13 @@
 
 body {
     font-family: 'EB Garamond', serif;
-    font-size: 16px;
-    color:dimgrey;
+
+}
+
+p {
+    color:#CD853F;
+    font-size:30px;
+    font-weight: bold;
 
 }
 
@@ -48,43 +53,34 @@ nav a.active{
     color:white;
 }
 
-h1{
-    color:#CD853F;
-    font-weight: bold;
-    text-align:center;
-}
-
-
 /* Main page body styles
 ----------------------------------------------------*/
 
-ul {
-    list-style-type: none;
-    padding-left:0;
-    font-size: 16px;
-}
+#reservationform {
 
-.detail{
-    box-sizing: border-box;
-    padding:50px;
-    text-align: left;
-}
-
-.table{
+    font-size:20px;
     color:#CD853F;
+    border:#CD853F 3px solid;
+    margin-top: -60px;
+    padding:2px;
+}
+
+.record{
+    color:#CD853F;
+    font-size:14px;
 }
 
 
+
+
+input[name="s1"],input[name="s2"],input[type="submit"]{
+    border:none;
+    background-color: #F4A460;
+    color:white;
+    font-family: 'EB Garamond', serif;
+    font-size:20px;
+
+}
 
 /* Footer styles
 ----------------------------------------------------*/
-footer {
-    text-align: center;
-    color:#CD853F;
-    font-size:30px;
-    font-weight: bold;
-}
-#copyright
-{
-    font-size:12px;
-}

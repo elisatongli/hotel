@@ -91,8 +91,9 @@ else
 
         echo "<script type='text/javascript'>alert('$message');</script>";
 
-
-        echo "<script>window.location='yourreservation.php';</script>";
+       // $link = $_SERVER['HTTP_REFERER'];
+       echo "<script>window.location='yourreservation.php';</script>";
+        //echo "<script>window.location='$link'</script>";
     }
 
 }
